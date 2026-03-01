@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartTach electronic store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       
+         body {
+            height: 100%;
+        }
+
+        body {
+           
+            background-image: url('photo/cover photo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        header {
+            display: flex; 
+            justify-content: flex-end; 
+            padding-right: 10px;
+            margin-top: 5px;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        header ul li a {
+            position: relative;
+            text-decoration: none;
+            transition: 1s ease;
+            color: rgb(152, 170, 115);
+            font-size: 25px;
+            padding: 15px;
+        }
+
+         header ul li a:hover {
+            color: rgb(28, 236, 90);
+        }
+
+         header ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 7px;
+            background-color: lightblue;
+            transition: width 0.3s ease;
+        }
+
+         header ul li a:hover::after {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header> 
+        <ul class="next">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </header>
+</body>
+</html>
